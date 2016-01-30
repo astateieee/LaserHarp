@@ -11,11 +11,11 @@ void setup() {
 }
 
 void loop() {
-  myStepper.setSpeed(analogRead(A1));
-  Serial.println(analogRead(A1));
+  //myStepper.setSpeed(analogRead(A1));
+  //Serial.println(analogRead(A1));
   
   for(int i = 0; i < 12; i++){
-    myStepper.step(2, laser, 1000);
+    myStepper.step(2, laser, 100);
   }
 
   for(int i = 0; i < 12; i++){

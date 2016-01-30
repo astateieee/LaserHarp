@@ -261,6 +261,7 @@ void Stepper::stepMotor(int thisStep, int laserPin, int delayTime)
         digitalWrite(motor_pin_2, LOW);
         digitalWrite(motor_pin_3, HIGH);
         digitalWrite(motor_pin_4, LOW);
+        delay(10);
         digitalWrite(laserPin, HIGH);
         delay(delayTime);
         digitalWrite(laserPin, LOW);
@@ -270,6 +271,7 @@ void Stepper::stepMotor(int thisStep, int laserPin, int delayTime)
         digitalWrite(motor_pin_2, HIGH);
         digitalWrite(motor_pin_3, HIGH);
         digitalWrite(motor_pin_4, LOW);
+        delay(10);
         digitalWrite(laserPin, HIGH);
         delay(delayTime);
         digitalWrite(laserPin, LOW);
@@ -279,6 +281,7 @@ void Stepper::stepMotor(int thisStep, int laserPin, int delayTime)
         digitalWrite(motor_pin_2, HIGH);
         digitalWrite(motor_pin_3, LOW);
         digitalWrite(motor_pin_4, HIGH);
+        delay(10);
         digitalWrite(laserPin, HIGH);
         delay(delayTime);
         digitalWrite(laserPin, LOW);
@@ -288,6 +291,7 @@ void Stepper::stepMotor(int thisStep, int laserPin, int delayTime)
         digitalWrite(motor_pin_2, LOW);
         digitalWrite(motor_pin_3, LOW);
         digitalWrite(motor_pin_4, HIGH);
+        delay(10);
         digitalWrite(laserPin, HIGH);
         delay(delayTime);
         digitalWrite(laserPin, LOW);
