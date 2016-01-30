@@ -76,8 +76,8 @@
  */
 
 // ensure this library description is only included once
-#ifndef Stepper_h
-#define Stepper_h
+#ifndef LaserHarpLibrary_h
+#define LaserHarpLibrary_h
 
 // library interface description
 class Stepper {
@@ -94,12 +94,12 @@ class Stepper {
     void setSpeed(long whatSpeed);
 
     // mover method:
-    void step(int number_of_steps);
+    void step(int steps_to_move, int laserPin, int delayTime);
 
     int version(void);
 
   private:
-    void stepMotor(int this_step);
+    void stepMotor(int this_step, int laserPin, int delayTime);
 
     int direction;            // Direction of rotation
     int speed;                // Speed in RPMs
@@ -119,4 +119,5 @@ class Stepper {
 };
 
 #endif
+
 

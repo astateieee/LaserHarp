@@ -1,4 +1,4 @@
-#include <Stepper.h>
+#include "LaserHarpLibrary.h"
 const int laser = 6;
 
 // initialize the stepper library on pins 8 through 11:
@@ -15,10 +15,10 @@ void loop() {
   Serial.println(analogRead(A1));
   
   for(int i = 0; i < 12; i++){
-    myStepper.step(2);
+    myStepper.step(2, laser, 1000);
   }
 
   for(int i = 0; i < 12; i++){
-    myStepper.step(-2);
+    myStepper.step(-2, laser, 100);
   }
 }
