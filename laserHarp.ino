@@ -15,10 +15,10 @@ void loop() {
   Serial.println(analogRead(A1));
   
   for(int i = 0; i < 12; i++){
-    myStepper.step(2, laser);
+    myStepper.step(2);
   }
 
   for(int i = 0; i < 12; i++){
-    myStepper.step(-2, laser);
+    myStepper.step(-2);
   }
 }
